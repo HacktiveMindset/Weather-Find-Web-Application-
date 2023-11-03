@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>abplivetv</title>
+    <link href="https://vjs.zencdn.net/7.14.3/video-js.css" rel="stylesheet">
+    <script src="https://vjs.zencdn.net/7.14.3/video.js"></script>
+</head>
+<body>
+    <div class="video-container">
+        <video
+            id="my-video"
+            class="video-js vjs-fluid"
+            controls
+            preload="auto"
+            data-setup='{ "fluid": true }'
+        >
+            <source src="https://abplivetv.akamaized.net/hls/live/2043010/hindi/master_720p.m3u8" type="application/x-mpegURL">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <script>
+        var player = videojs('my-video');
+    </script>
+
+    <style>
+        .video-container {
+            max-width: 100%;
+            overflow: hidden;
+        }
+    </style>
+</body>
+</html>

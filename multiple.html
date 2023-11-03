@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiple M3U8 Streams with Titles</title>
+    <link href="https://vjs.zencdn.net/7.14.3/video-js.css" rel="stylesheet">
+    <script src="https://vjs.zencdn.net/7.14.3/video.js"></script>
+</head>
+<body>
+    <div class="video-container">
+        <h2>Video 1 Title</h2>
+        <video
+            id="video1"
+            class="video-js vjs-fluid"
+            controls
+            preload="auto"
+            data-setup='{ "fluid": true }'
+        >
+            <source src="https://ndtvindiaelemarchana.akamaized.net/hls/live/2003679-b/ndtvindia/masterb_480p@5.m3u8" type="application/x-mpegURL">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <div class="video-container">
+        <h2>Video 2 Title</h2>
+        <video
+            id="video2"
+            class="video-js vjs-fluid"
+            controls
+            preload="auto"
+            data-setup='{ "fluid": true }'
+        >
+            <source src="https://nw18live.cdn.jio.com/bpk-tv/CNN_News18_NW18_MOB/output01/CNN_News18_NW18_MOB-audio_33635_eng=33600-video=148000.m3u8" type="application/x-mpegURL">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <!-- Add more video containers and videos with titles as needed -->
+
+    <script>
+        // Initialize each video player separately
+        var player1 = videojs('video1');
+        var player2 = videojs('video2');
+        // Initialize more players as needed
+    </script>
+
+    <style>
+        .video-container {
+            max-width: 100%;
+            overflow: hidden;
+            margin-bottom: 20px; /* Add some spacing between videos */
+        }
+
+        h2 {
+            color: #333;
+        }
+    </style>
+</body>
+</html>
