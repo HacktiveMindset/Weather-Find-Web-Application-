@@ -1,0 +1,39 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #f4f4f4;
+    padding: 10px;
+    text-align: center;
+}
+
+header h1 {
+    color: #333;
+}
+
+.news-section {
+    margin: 20px;
+}
+
+.news-article {
+    border: 1px solid #f4f4f4;
+    margin-bottom: 20px;
+    padding: 15px;
+}
+
+.news-article h2 {
+    margin-bottom: 10px;
+}
+
+.news-article p {
+    color: #777;
+}
