@@ -9,6 +9,7 @@
 ## Overview
 This web application enables users to fetch real-time weather information for different cities. Utilizing the OpenWeatherMap API, it offers a user-friendly interface to explore weather details conveniently.
 ### Live Site - [Click me](https://teampiyushfinal.pages.dev/)
+![img.png](img.png)
 
 ## Features
 - Dynamic weather data retrieval based on user queries.
